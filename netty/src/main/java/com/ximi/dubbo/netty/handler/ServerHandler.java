@@ -7,7 +7,7 @@ public class ServerHandler extends SimpleChannelInboundHandler<String> {
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, String msg) throws Exception {
-        System.out.printf("client msg:" + msg);
-        ctx.writeAndFlush("msg" + " ok");
+        System.out.println("client msg:" + msg);
+        ctx.writeAndFlush( "ok");
     }
 }

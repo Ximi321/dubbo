@@ -53,4 +53,10 @@ public class NettyServer {
         channel = channelFuture.channel();
     }
 
+    public void close() {
+        channel.close();
+        bossGroup.shutdownGracefully();
+        workGroup.shutdownGracefully();
+    }
+
 }
