@@ -41,7 +41,7 @@ public class NettyServer {
                     protected void initChannel(ServerChannel ch) throws Exception {
                         ch.pipeline().addLast("encode", new RpaEncoder());
                         ch.pipeline().addLast("decode", new RpaDecoder());
-                        ch.pipeline().addLast("server-handler", new RpaServerHandler());
+                        ch.pipeline().addLast("server-handler", new RpcServerHandler());
                     }
                 });
 

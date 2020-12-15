@@ -12,7 +12,7 @@ import io.netty.channel.SimpleChannelInboundHandler;
  * @author Ximi
  * @since 2020/12/15
  */
-public class RpaClientHandler extends SimpleChannelInboundHandler<Message<Response>> {
+public class RpcClientHandler extends SimpleChannelInboundHandler<Message<Response>> {
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, Message<Response> msg) throws Exception {

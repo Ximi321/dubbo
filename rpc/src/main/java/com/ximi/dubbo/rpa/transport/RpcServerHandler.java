@@ -14,7 +14,7 @@ import java.util.concurrent.Executors;
  * @author Ximi
  * @since 2020/12/15
  */
-public class RpaServerHandler extends SimpleChannelInboundHandler<Message<Request>> {
+public class RpcServerHandler extends SimpleChannelInboundHandler<Message<Request>> {
 
     private ExecutorService executorService = Executors.newFixedThreadPool(8);
 
