@@ -14,6 +14,9 @@ public class Response implements Serializable {
     private String errorMessage;
     private Object result;
 
+    public Response() {
+    }
+
     public Response(Integer code, String errorMessage, Object result) {
         this.code = code;
         this.errorMessage = errorMessage;

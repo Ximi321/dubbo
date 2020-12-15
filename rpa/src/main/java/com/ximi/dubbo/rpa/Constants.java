@@ -1,5 +1,9 @@
 package com.ximi.dubbo.rpa;
 
+import com.ximi.dubbo.rpa.transport.NettyResponseFuture;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
 /**
  * 常量
  *
@@ -16,4 +20,7 @@ public class Constants {
 
     //头部的长度
     public static Integer headerLength = 18;
+
+    public static Integer heartCode = -1;
+
 }
